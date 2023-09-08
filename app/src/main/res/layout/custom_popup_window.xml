@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="240dp"
+    android:layout_height="270dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relative_layout"
+    android:background="@color/bg_transparent">
+
+    <View
+        android:layout_width="240dp"
+        android:layout_height="30dp"
+        android:id="@+id/view"
+        android:background="@color/bg_transparent"
+        />
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:padding="7dp"
+        android:id="@+id/ImageViewDismiss"
+        android:src="@drawable/ic_close"
+        />
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:padding="7dp"
+        android:id="@+id/ImageViewMaximize"
+        android:src="@drawable/ic_baseline_open"
+        android:layout_toRightOf="@+id/ImageViewDismiss"
+        />
+    <com.google.android.exoplayer2.ui.PlayerView
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:layout_below="@+id/view"
+        android:id="@+id/playerView"
+        android:background="@color/black"
+        app:resize_mode="fit"
+        app:rewind_increment="10000"
+        app:shutter_background_color="@color/black"
+        app:fastforward_increment="10000"
+        app:use_controller="true"
+
+        app:controller_layout_id="@layout/custom_popup_controller"
+        />
+</RelativeLayout>

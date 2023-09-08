@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">VideoPlayer</string>
+    <string name="video_player">Video Player</string>
+    <string name="all">All</string>
+    <string name="sd_card">SD Card</string>
+    <string name="internal_storage">Internal Storage</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
